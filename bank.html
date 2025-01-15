@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bank.css">
+    <title>Banck Interface</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="card">
+        <center>
+            <h2>Graphe des Soldes Bancaires</h2>
+        </center>
+        <p>Par client</p>
+        <div class="pulse"></div>
+        <div class="chart-area">
+            <div class="grid"></div>
+        </div>
+    </div>
+
+    
+    <div class="containero">
+
+        <div class="chart-container">
+            <div id="canvas-container"></div>
+        </div>
+        
+        <div class="controls">
+            <select id="chartType" class="select">
+                <option value="bar">Bar</option>
+                <option value="line">Ligne</option>
+                <option value="pie">Cercle</option>
+                <option value="doughnut">Doughnut</option>
+                <option value="radar">Radar</option>
+            </select>
+           
+            <button onclick="updateChartType()" class="btn">Changer le Type de Graphe</button>
+    
+      
+                <button id="add" class="Add" >Add Account</button>
+                <button id="exporter">Export Data</button>
+
+        </div>
+
+    </div>
+       
+        <div class="Account">
+            
+           
+        </div>
+
+        <ul class="glass">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+           
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="bank.js"></script>
+</body>
+
+</html>
